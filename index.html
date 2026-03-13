@@ -130,16 +130,11 @@
       color: var(--accent);
     }
 
-    .video-placeholder {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 200px;
-      background: var(--bg);
-      border: 2px dashed var(--border);
+    .video-player {
+      width: 100%;
       border-radius: var(--radius);
-      color: var(--muted);
-      font-size: 1.1rem;
+      background: var(--bg);
+      display: block;
     }
 
     @media (max-width: 480px) {
@@ -182,7 +177,7 @@
 
     <section>
       <h2>Vídeo demonstração</h2>
-      <div class="video-placeholder">Em breve</div>
+      <video class="video-player" src="demo.mp4" controls></video>
     </section>
   </div>
 </body>
