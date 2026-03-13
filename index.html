@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CheckPoint 1 - VAE PneumoniaMNIST</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0f1419;
+      --surface: #1a2332;
+      --border: #2d3a4f;
+      --text: #e6edf3;
+      --muted: #8b949e;
+      --accent: #58a6ff;
+      --accent-hover: #79b8ff;
+      --success: #3fb950;
+      --radius: 12px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'DM Sans', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      min-height: 100vh;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+    }
+
+    h1 {
+      font-size: 1.75rem;
+      font-weight: 700;
+      margin: 0 0 0.5rem;
+      letter-spacing: -0.02em;
+    }
+
+    .subtitle {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-bottom: 2rem;
+    }
+
+    section {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    section h2 {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin: 0 0 1rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 0.75rem 1rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    th {
+      font-weight: 600;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.65rem 1.25rem;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      text-decoration: none;
+      color: var(--bg);
+      background: var(--text);
+      border: none;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.1s;
+    }
+
+    .btn:hover {
+      background: var(--accent);
+      color: var(--bg);
+      transform: translateY(-1px);
+    }
+
+    .btn.btn-gh {
+      background: var(--surface);
+      color: var(--text);
+      border: 1px solid var(--border);
+    }
+
+    .btn.btn-gh:hover {
+      background: var(--border);
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    .video-placeholder {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 200px;
+      background: var(--bg);
+      border: 2px dashed var(--border);
+      border-radius: var(--radius);
+      color: var(--muted);
+      font-size: 1.1rem;
+    }
+
+    @media (max-width: 480px) {
+      .container { padding: 1.25rem 1rem; }
+      .links { flex-direction: column; }
+      .btn { justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>CheckPoint 1 - VAE PneumoniaMNIST</h1>
+    <p class="subtitle">Triagem de pneumonia e geração de imagens com Variational Autoencoder · FIAP</p>
+
+    <section>
+      <h2>Integrantes do grupo</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>RM</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Matheus Cardoso Gomes</td><td>564898</td></tr>
+          <tr><td>Paulo Gabriel Pessoa da Silva</td><td>566446</td></tr>
+          <tr><td>William Stahl Sanches Furquim Garcia</td><td>562800</td></tr>
+          <tr><td>Caique Sousa</td><td>563621</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Links</h2>
+      <div class="links">
+        <a href="https://github.com/MathCG19/checkpoint-1-vae-pneumonia" target="_blank" rel="noopener noreferrer" class="btn btn-gh">GitHub →</a>
+        <a href="https://checkpoint-1-vae-pneumonia-bnh4xmqvdtkxx9fulybesb.streamlit.app" target="_blank" rel="noopener noreferrer" class="btn">Abrir app Streamlit →</a>
+      </div>
+    </section>
+
+    <section>
+      <h2>Vídeo demonstração</h2>
+      <div class="video-placeholder">Em breve</div>
+    </section>
+  </div>
+</body>
+</html>
