@@ -1,7 +1,9 @@
-tensorflow==2.16.1
-numpy==1.26.4
-matplotlib==3.8.4
-medmnist==2.2.2
-pillow==10.4.0
-streamlit==1.37.1
-scikit-image==0.24.0 
+# Python 3.14 / Streamlit Cloud: usar tensorflow-cpu (wheels disponíveis; tensorflow completo pode não ter build para 3.14).
+# Se o deploy falhar com Python 3.14, defina Python 3.12 nas configurações do app no Streamlit Cloud.
+tensorflow-cpu>=2.20.0,<2.22.0
+numpy>=1.26.0,<3.0.0
+matplotlib>=3.8.0,<4.0.0
+medmnist>=2.2.0
+pillow>=10.0.0
+streamlit>=1.37.0
+scikit-image>=0.24.0
