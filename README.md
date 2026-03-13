@@ -1,3 +1,14 @@
+## 👥 Integrantes do Grupo
+
+| Nome | RM |
+|------|----|
+| Matheus Cardoso Gomes | 564898 |
+| Paulo Gabriel Pessoa da Silva | 566446 |
+| William Stahl Sanches Furquim Garcia | 562800 |
+| Caique Sousa | 563621 |
+
+---
+
 # 🔬 VAE PneumoniaMNIST - Triagem de Pneumonia e Geração de Imagens
 
 Um projeto completo de **Variational Autoencoder (VAE)** treinado no dataset PneumoniaMNIST para triagem de pneumonia e geração de imagens sintéticas de raio-X.
